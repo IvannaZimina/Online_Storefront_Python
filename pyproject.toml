@@ -1,0 +1,18 @@
+[project]
+name = "online-storefront"
+version = "0.1.0"
+description = "Modular online storefront application with product, cart, payment, shipping domains."
+authors = [
+    { name = "Ivanna Zimina" }
+]
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
