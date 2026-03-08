@@ -1,19 +1,55 @@
-# Python
+# ---------------------------------------
+# Python cache / build artifacts
+# ---------------------------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
 *.egg-info/
 dist/
 build/
+*.egg
 
-# venv
+# ---------------------------------------
+# Virtual environment
+# ---------------------------------------
 venv/
+.env/         # only if created as folder, not file
 
-# IDE/OS
+# ---------------------------------------
+# pytest cache and coverage files
+# ---------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------
+# VS Code / IDE files
+# ---------------------------------------
 .vscode/
-.DS_Store
+*.code-workspace
 
-# Data placeholders
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------
+# Project-specific ignores
+# ---------------------------------------
+# If .env is a FILE with only PYTHONPATH=src, leave it uncommented:
+# uncomment the next line if your .env contains secrets:
+# .env
+
+# Byte-compiled Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Remove installed egg-info created by editable installs
+online_storefront.egg-info/
+
+# ---------------------------------------
+# What NOT to ignore (keep in repo)
+# ---------------------------------------
+# Data files used by the project:
 # src/product/storage/products.json
 # src/product/storage/photos/
