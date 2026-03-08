@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# venv
+venv/
+
+# IDE/OS
+.vscode/
+.DS_Store
+
+# Data placeholders
+# src/product/storage/products.json
+# src/product/storage/photos/
